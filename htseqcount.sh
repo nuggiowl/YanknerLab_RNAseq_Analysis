@@ -1,1 +1,4 @@
-htseq-count -f bam -r pos -s reverse $input_bam /n/data1/bch/genetics/lee/data/references/mm10/mm10.ncbiRefSeq.gtf
+input_bam=$1
+ANNOT=$2
+
+htseq-count -f bam -r pos -s reverse $input_bam $ANNOT/mm10/mm10.ncbiRefSeq.gtf
